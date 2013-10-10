@@ -1,7 +1,35 @@
+#banner {
+	font-size: 57px;
+	position: absolute;
+	margin: -14% 0 0 31%;
+	letter-spacing: 3px;
+	background-color: white;
+	box-shadow: 0px 0px 25px 25px white;
+	border-radius: 50%;
+}
 #grpbnch {
 	margin-top: -20%;
 }
 #icon {
 	width: 25%;
 	float: left;
+}
+#example {
+	border-radius: 50%;
+	background-color: black;
+	width: 33%;
+	margin: 15% 0 0 0;
+	height: 220px;
+	text-align: center;
+	padding: 5%;
+	font-family: cursive;
+	font-size: xx-large;
+	box-shadow: 20px 20px 25px 0px darkorchid;
+}
+#bvk {
+	max-width: 25px;
+	margin-right: 5px;
+}
+a:hover {
+	text-decoration: none;
 }
