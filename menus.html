@@ -2,23 +2,29 @@
 <html>
 	<head>
 		<title>Sample Menus</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	</head>
 	<body>
-		<!--banner-->
-		<div><img src="banner.png"></div>
-		<!--left column-->
-		<div>
-			
-		</div>
-		<!--center column-->
-		<div>
-			
-		</div>
-		<!--right column-->
-		<div>
-			
-		</div>
-		<!--footer-->
-		<div>example</div>
+		<div class="tabs">
+			<ul class="js-nav">
+				<li class="js-nav-item"><a href="#tab1">Item 1</a></li>
+				<li class="js-nav-item"><a href="#tab2">Item 2</a></li>
+				<li class="js-nav-item"><a href="#tab3">Item 3</a></li></ul>
+			<div class="js-tab" id="tab1">
+				<p>content 1</p></div>
+			<div class="js-tab" id="tab2">
+				<p>content 2</p></div>
+			<div class="js-tab" id="tab3">
+				<p>content 3</p></div></div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jquery.herotabs.js"></script>
+		<script>
+			$('.tabs').herotabs({
+				// options
+			});
+		</script>
 	</body>
 </html>
