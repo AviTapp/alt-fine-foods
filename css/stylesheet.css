@@ -32,3 +32,13 @@
 }
 a:hover {
 	text-decoration: none;}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.placeholder {
+	height: 50px;
+	background-color: grey;
+}
