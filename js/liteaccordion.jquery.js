@@ -16,9 +16,9 @@
     var LiteAccordion = function(elem, options) {
 
         var defaults = {
-            containerWidth : 1081,                   // fixed (px)
+            containerWidth : 870,                   // fixed (px)
             containerHeight : 613,                  // fixed (px)
-            headerWidth : 48,                       // fixed (px)
+            headerWidth : 30,                       // fixed (px)
 
             activateOn : 'click',                   // click or mouseover
             firstSlide : 1,                         // displays slide (n) on page load

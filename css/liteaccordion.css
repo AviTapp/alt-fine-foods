@@ -45,10 +45,10 @@
 }
 .liteAccordion .slide > h2 span {
     display: block;
-    padding-right: 8%;
+    padding-right: 1%;
     text-align: right;
     height: 90%;
-    margin-top: 5px;
+    margin-top: 1%;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -74,7 +74,7 @@
 .liteAccordion noscript p { padding: 10px; margin: 0; background: white }
 
 /****************************************** Basic */
-.liteAccordion.basic .slide > h2 { background: #333; color: white; line-height: 225% }
+.liteAccordion.basic .slide > h2 { background: #333; color: white; line-height: 100% }
 
 /****************************************** Dark */
 .liteAccordion.dark {
