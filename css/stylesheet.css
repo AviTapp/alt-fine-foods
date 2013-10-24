@@ -32,10 +32,10 @@
 }
 a:hover {
 	text-decoration: none;}
-.placeholder {
-	height: 50px;
-	background-color: grey;
+.blankimg {
+	width: 50px;
 }
-#simcha {
-	left: 120px;
+#banner100 {
+	width: 873px;
+	padding-left: 160px;
 }

@@ -16,7 +16,7 @@
     var LiteAccordion = function(elem, options) {
 
         var defaults = {
-            containerWidth : 870,                   // fixed (px)
+            containerWidth : 860,                   // fixed (px)
             containerHeight : 613,                  // fixed (px)
             headerWidth : 30,                       // fixed (px)
 
