@@ -1,4 +1,4 @@
-#banner {
+#bannertext {
 	font-size: 57px;
 	position: absolute;
 	margin: -14% 0 0 31%;
@@ -7,8 +7,12 @@
 	box-shadow: 0px 0px 25px 25px white;
 	border-radius: 50%;
 }
-#grpbnch {
-	margin-top: -20%;
+.imgflex,
+.grpbnch {
+	width: 100%;
+}
+.grpbnch {
+	margin-top: -7%;
 }
 #icon {
 	width: 25%;
@@ -38,4 +42,18 @@ a:hover {
 #banner100 {
 	width: 873px;
 	padding-left: 160px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.per20,
+.per40 {
+	float: left;
+}
+.per20 {
+	width: 20%;
+}
+.per40 {
+	width: 40%
 }
