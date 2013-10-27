@@ -1,18 +1,12 @@
 #bannertext {
-	font-size: 57px;
-	position: absolute;
-	margin: -14% 0 0 31%;
-	letter-spacing: 3px;
-	background-color: white;
-	box-shadow: 0px 0px 25px 25px white;
-	border-radius: 50%;
+	text-align: center;
+	padding: 4px;
+	font-family: helvetica;
+	border: 5px solid black;
 }
 .imgflex,
 .grpbnch {
 	width: 100%;
-}
-.grpbnch {
-	margin-top: -7%;
 }
 #icon {
 	width: 25%;
@@ -47,13 +41,7 @@ ul {
 	list-style: none;
 	padding: 0;
 }
-.per20,
-.per40 {
-	float: left;
-}
-.per20 {
-	width: 20%;
-}
-.per40 {
-	width: 40%
+.grid_11 .grid_2 {
+	padding: 0px 0px 0px 0px;
+	margin: -6px 27px 0px 27px;
 }
