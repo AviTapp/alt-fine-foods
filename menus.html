@@ -2,16 +2,18 @@
 <html>
  <head>
 	<title>example</title>
-	<link href="css/960_12_col.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
+	<link rel="stylesheet" type="text/css" href="css/liteaccordion.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
  </head>
  <body>
 	<div class="container_12">
-	 <div id="header" class="grid_12 placeholder"></div>
-	 <div id="home" class="grid_3 left placeholder"></div>
+	 <div id="header" class="grid_12"><img src="img/banner100.png"></div>
 <!---->
 	<div class="grid_12 tabs">
-		<div class="grid_1 left">
+		<div class="grid_1">
 			<ul class="js-nav">
+				<li><a href="index.html">Home</a></li>
 				<li class="js-nav-item"><a href="#simcha">Simcha</a></li>
 				<li class="js-nav-item"><a href="#shabbaton">Shabbaton</a></li>
 				<li class="js-nav-item"><a href="#tour">Tour/Group</a></li>
@@ -19,25 +21,42 @@
 			</ul>
 		</div>
 		<div id="simcha" class="js-tab grid_11">
-			wedding<object data="pdf/wedding.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Bar/Bat Mitzvah<object data="pdf/barmitzvah.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Bris Milah<object data="pdf/brismilah.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Kiddush<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Melava Malka<object data="pdf/melavamalka.pdf" height="613px" type="application/pdf" width="100%"></object>
+			<ol><li><h2><span>Wedding</span></h2>
+					<div><object data="pdf/wedding.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Bar/Bat Mitzvah</span></h2>
+					<div><object data="pdf/barmitzvah.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Bris Milah</span></h2>
+					<div><object data="pdf/brismilah.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Kiddush</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Melava Malka</span></h2>
+					<div><object data="pdf/melavamalka.pdf" height="613px" type="application/pdf" width="100%"></object></div></li></ol>
+			<noscript><p>Please enable Javascript to get the full experience.</p></noscript>
 		</div>
 		<div id="shabbaton" class="js-tab grid_11">
-			Friday<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Shabbos<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Sunday<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
+			<ol><li><h2><span>Friday</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Shabbos</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Sunday</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li></ol>
+			<noscript><p>Please enable Javascript to get the full experience.</p></noscript>
 		</div>
 		<div id="tour" class="js-tab grid_11">
-			Lunch<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Overnight<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Several Days<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
+			<ol><li><h2><span>Lunch</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Overnight</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Several Days</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li></ol>
+			<noscript><p>Please enable Javascript to get the full experience.</p></noscript>
 		</div>
 		<div id="benefit" class="js-tab grid_11">
-			Meat<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
-			Dairy<object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object>
+			<ol><li><h2><span>Meat</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li>
+				<li><h2><span>Dairy</span></h2>
+					<div><object data="pdf/kiddush.pdf" height="613px" type="application/pdf" width="100%"></object></div></li></ol>
+			<noscript><p>Please enable Javascript to get the full experience.</p></noscript>
 		</div>
 	</div>
 <!---->
@@ -45,10 +64,11 @@
 	</div>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/jquery.herotabs.js"></script>
-	<script>
-		$('.tabs').herotabs({
-			// options
-		});
-</script>
+	<script>$('.tabs').herotabs({});</script>
+	<script src="js/liteaccordion.jquery.js"></script>
+	<script>$('#simcha').liteAccordion();</script>
+	<script>$('#shabbaton').liteAccordion();</script>
+	<script>$('#tour').liteAccordion();</script>
+	<script>$('#benefit').liteAccordion();</script>
  </body>
 </html>
